@@ -120,3 +120,12 @@ function showHideTextbox() {
     }
     
 }
+
+function submitForm () {
+    message = document.getElementById("send_message");
+    if (message.checked) {
+        text = document.getElementById("message_textbox");
+        console.log(text.value);
+        window.location.href = `mailto:pam@pamelasdiner.com?subject=A Message&body=${text.value}`;
+    }
+}
