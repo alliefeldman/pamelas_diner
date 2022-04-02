@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Allie Feldman">
+        <meta name="keywords" content="Pamela's Diner">
+	    <meta name="description" content="Restaurant Website">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slideshow_home.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <title>Pamela's Diner</title>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slideshow.js" type="text/javascript"></script>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="top_strip">
+                <img src="media/pamelas_logo.png">
+            </div>
+            <div id="navbar" onmouseleave="resetNav()">
+                <div id="main">
+                    <nav>
+                        <a href="index.html"><h2>HOME</h2></a>
+                        <a id="locations" onmouseenter="displayLocationMenu();"><h2>LOCATIONS</h2></a>
+                        <a onmouseenter="displayMenuMenu();"><h2>MENUS</h2></a>
+                        <a href="order_online.html" id="order_online"><h2>ORDER ONLINE</h2></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="menu_header">
+            <h1>Menu: Strip District</h1>
+        </div>
+        <div id="menu_content">
+            <a href="media/menu_strip.pdf" target="_blank" id="pdf"><img src="media/pdf_icon.png"> See as a PDF</a><br><br>
+            <h2 class="menu_category">Egg Combos</h2>
+            <p>Served with your choice of our Lyonnaise potatoes, French fries or tomato slices (Substitute fruit cup for $1 more) & toast</p>
+            <hr>
+            <table>
+                <tr>
+                    <td><span class="item_name">MEAT & EGGS*</span> — 2 eggs any style with your choice of double smoked, thick-slice bacon, hand-carved ham, sausage links or turkey sausage patties</td>
+                    <td class="item_price">$8.95</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">KIELBASA & EGGS*</span> — 2 eggs any style with grilled kielbasa</td>
+                    <td class="item_price">$9.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CHORIZO & EGGS*</span> — 2 eggs any style with spicy chorizo sausage patties </td>
+                    <td class="item_price">$9.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">2 EGGS*</span> — Any style</td>
+                    <td class="item_price">$6.50</td>
+                </tr>
+            </table><br>
+            <h2 class="menu_category">Omelets</h2>
+            <p>Served with your choice of our Lyonnaise potatoes, French fries or tomato slices (Substitute fruit cup for $1 more) & toast</p>
+            <hr>
+            <table>
+                <tr>
+                    <td><span class="item_name">CHEESE OMELET</span> — Choice of American, Swiss, or cheddar</td>
+                    <td class="item_price">$7.50</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">MEAT & CHEESE OMELET</span> — Choice of bacon, sausage, or ham</td>
+                    <td class="item_price">$8.50</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">WESTERN OMELET</span> — Ham, pepper & onion</td>
+                    <td class="item_price">$8.50</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CORNED BEEF & SWISS OMELET</span></td>
+                    <td class="item_price">$8.95</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">SPINACH & FETA OMELET</span></td>
+                    <td class="item_price">$8.95</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">VEGGIE OMELET</span> — Tomato, onion, pepper & mushrooms</td>
+                    <td class="item_price">$8.50</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">MUSHROOM & CHEESE OMELET</span></td>
+                    <td class="item_price">$8.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">BROCCOLI & CHEDDAR OMELET</span></td>
+                    <td class="item_price">$8.00</td>
+                </tr>
+            </table><br>
+            <table class="addons">
+                <tr>
+                    <td><span class="item_name">EGG WHITES</span> $1.00 extra</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CHEESE</span> - America, Swiss or cheddar $0.50 each</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">VEGGIES</span> - Fresh mushrooms, spinach, tomato, onion, pepper, jalapenos, broccoli $0.50 each</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">FETA</span> $1.00 extra</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">EXTRA MEAT</span> - Bacon, sausage, ham, turkey ssausage, chorizo or Kielbasa $1.50 each</td>
+                </tr>
+            </table><br>
+            <h2 class="menu_category">Breakfast Sandwiches</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td><span class="item_name">EGG* & CHEESE SANDWICH</span> - Served on Italian, wheat, rye, English muffin or bagel</td>
+                    <td class="item_price">$3.95</td>
+                </tr>
+                <tr>
+                    <td>With bacon, sausage or ham</td>
+                    <td class="item_price">$5.95</td>
+                </tr>
+            </table><br>
+            <h2 class="menu_category">Fan Favorites</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td><span class="item_name">TEX-MEX OMELET</span> — Chorizo, cheddar cheese and salsa, topped with guacamole & sour cream, served with Lyonnaise potatoes & toast</td>
+                    <td class="item_price">$9.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">GAIL'S FAVORITE EGGS*</span> — Lightly scrambled, with cream cheese & scallions, served with our Lyonnaise potatoes & toast</td>
+                    <td class="item_price">$7.50</td>
+                </tr>
+            </table><br>
+            <div class="special_menu_category">
+                <h2 class="menu_category">Homemade Hash | $9.25</h2>          
+                <p>Served with 2 eggs any style & toast or tortillas</p>
+                <table>
+                    <tr>
+                        <td><span class="item_name">CHORIZO HASH </span> — Lyonnaise potatoes mixed with chorizo sausage & jalepeno, topped with melted cheddar & sour cream</td>
+                    </tr>
+                    <tr>
+                        <td><span class="item_name">PITTSBURGH HASH</span> — Lyonnaise potatoes mixed with kielbasa & sauerkraut, topped with Swiss</td>
+                    </tr>
+                    <tr>
+                        <td><span class="item_name">CORNED BEEF HASH</span> — Lyonnaise potatoes mixed with corned beef</td>
+                    </tr>
+                    <tr>
+                        <td><span class="item_name">PAM'S TRASH HASH</span> — Lyonnaise potatoes mized with sloppy joe's, jalepeno & bacon, topped with American cheese</td>
+                        </tr>
+                </table>
+            </div><br>
+            <div class="special_menu_category">
+                <table>
+                    <tr>
+                        <td><span class="item_name">THE MORNING AFTER BREAKFAST SPECIAL</span> — 2 eggs, your choice of ham, bacon, or sausage & hotcakes</td>
+                        <td class="item_price">$8.95</td>
+                    </tr>
+                </table>
+            </div><br>
+            <h2 class="menu_category">Specialty Crepe-Style Hotcakes | $8.95</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td><span class="item_name">STRAWBERRY HOTCAKES</span> - Stuffed with fresh strawberries, brown sugar, sour cream & topped with whipped cream</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">BLUEBERY HOTCAKES</span> - Stuffed with fresh blueberries, brown sugar, sour cream & topped with whipped cream</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CHOCOLATE CHIP BANANA HOTCAKES</span> - Stuffed with bananas, chocolate chips & whipped cream</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">BANANA WALNUT HOTCAKES</span> - Stuffed with fresh bananas, walnuts & whipped cream</td>
+                </tr>
+            </table><br>
+            <h2 class="menu_category">Hotcakes, French Toast & Waffles</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td><span class="item_name">PAMELA'S FAMOUS CREPE-STYLE HOTCAKES (3)</span></td>
+                    <td class="item_price">$6.50</td>
+                </tr>
+                <tr>
+                    <td>With meat - Choice of double smoked, thick-sliced bacon, hand-carved ham, sausage links or turkey sausage patties</td>
+                    <td class="item_price">+$3</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CREPE-STYLE SHORT STACK HOTCAKES (2)</span></td>
+                    <td class="item_price">$5.50</td>
+                </tr>
+                <tr>
+                    <td>With meat - Choice of double smoked, thick-sliced bacon, hand-carved ham, sausage links or turkey sausage patties</td>
+                    <td class="item_price">+$3</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">FRENCH TOAST</span></td>
+                    <td class="item_price">$6.50</td>
+                </tr>
+                <tr>
+                    <td>With meat - Choice of double smoked, thick-sliced bacon, hand-carved ham, sausage links or turkey sausage patties</td>
+                    <td class="item_price">+$3</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CALIFORNIA FRENCH TOAST</span> - Home-style whole wheat raisin bread dunked in cinnamon-vanilla egg batter</td>
+                    <td class="item_price">$6.95</td>
+                </tr>
+                <tr>
+                    <td>Topped with walnuts, chocolate chips or bananas</td>
+                    <td class="item_price">+$1.5</td>
+                </tr>
+                <tr>
+                    <td>Topped with strawberries or blueberries</td>
+                    <td class="item_price">+$2</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">CROISSANT FRENCH TOAST</span> - Croissants soaked in cinnamon-vanilla egg batter & topped with caramel sauce & walnuts</td>
+                    <td class="item_price">$8.95</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">BELGIAN WAFFLE</span></td>
+                    <td class="item_price">$6.50</td>
+                </tr>
+                <tr>
+                    <td>With walnuts, chocolate chips or bananas</td>
+                    <td class="item_price">+$1.5</td>
+                </tr>
+                <tr>
+                    <td>With strawberries or blueberries</td>
+                    <td class="item_price">+$2</td>
+                </tr>
+            </table><br>
+            <h2 class="menu_category">Sides</h2>
+            <hr>
+            <table class="sides">
+                <tr>
+                    <td><span class="item_name">Double smoked, thick-sliced bacon, hand-carved ham, chorizo patties or Kielbasa</span></td>
+                    <td class="item_price">$3.95</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Sausage links or turkey sausage patties</span></td>
+                    <td class="item_price">$3.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Corned beef hash</span></td>
+                    <td class="item_price">$7.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Pittsburgh hash</span></td>
+                    <td class="item_price">$7.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Chorizo hash</span></td>
+                    <td class="item_price">$7.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Trash hash</span></td>
+                    <td class="item_price">$7.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Famous Lyonnaise potatoes</span></td>
+                    <td class="item_price">$3.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Extra egg*</span></td>
+                    <td class="item_price">$1.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Bagel or english muffin</span></td>
+                    <td class="item_price">$1.75</td>
+                </tr>
+                <tr>
+                    <td>With cream cheese</td>
+                    <td class="item_price">+$.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Toast</span> - whole wheat, rye or raisin</td>
+                    <td class="item_price">$1.25</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Fruit bowl</span> - Mixed Fruit</td>
+                    <td class="item_price">$4.50</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Fruit cup</span> - Mixed Fruit</td>
+                    <td class="item_price">$3.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Side of strawberries</span></td>
+                    <td class="item_price">$3.00</td>
+                </tr>
+                <tr>
+                    <td><span class="item_name">Banana</span></td>
+                    <td class="item_price">$1.50</td>
+                </tr>
+
+            </table><br>
+        </div>
+        <div class="stay_in_touch">
+            <form>
+                <div id="column1">
+                    <h2>Stay in Touch</h2>
+                    <label for="name">Name (required)</label><br>
+                    <input type="text" id="name" required size="20px"><br><br>
+                    <label for="name">Email (required)</label><br>
+                    <input type="email" id="email" required size="20px"><br><br>
+                    <label for="zip">Zip Code</label><br>
+                    <input type="number" id="zip">
+                </div>
+                <div id="column2">
+                    <label>What would you like to do?</label><br>
+                    <label for="mailing_list"></label>
+                    <input type="checkbox" name="action" id="mailing_list">
+                    <label>Join our mailing list</label>
+                    <input type="checkbox" name="action" id="send_message" onclick="showHideTextbox()">
+                    <label for="send_message">Send us a message</label><br><br>
+                </div>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            &copy; 2021 Pamela's Diner &trade;<br>
+            <img src="media/instagram.png"> <br><!-- https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png-->
+            <img src="media/facebook.png">
+        </footer>
+        
+    </body>
+
+
+</html>

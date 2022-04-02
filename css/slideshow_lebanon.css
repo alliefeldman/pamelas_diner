@@ -1,0 +1,61 @@
+/** altered code by webdevtrick ( https://webdevtrick.com ) **/
+ul, ol {
+  list-style: none
+}
+
+#slideshow_strip {
+  height: 400px;
+  margin-top: 73px;
+  padding: 0px;
+}
+#slideshow_strip .slider-parent {
+  padding: 0px;
+  display: flex;
+  margin: 0px;
+}
+#slideshow_strip .slider-parent .images-list {
+  background-size:cover;
+  padding: 0px;
+}
+#slideshow_strip .slider-parent .images-list:first-of-type, #slideshow_strip .slider-parent .images-list:last-of-type {
+  background-image: url("../media/slideshows/mt_lebanon/1.jpeg");
+  background-position: top;
+}
+#slideshow_strip .slider-parent .images-list:nth-of-type(2) {
+  background-image: url("../media/slideshows/mt_lebanon/2.jpeg");
+  background-position: center
+}
+#slideshow_strip .slider-parent .images-list:nth-of-type(3) {
+  background-image: url("../media/slideshows/mt_lebanon/3.jpeg")
+}
+#slideshow_strip .slider-parent .images-list:nth-of-type(4) {
+  background-image: url("../media/slideshows/mt_lebanon/4.jpeg")
+}
+
+
+
+
+#slideshow_strip .buttom-circles {
+  display: none;
+}
+#slideshow_strip > .fa {
+  display: none;
+}
+
+
+@media(min-width: 100px) and (max-width: 767px) {
+  #slideshow_strip > .fa { font-size: 25px }
+  #slideshow_strip .buttom-circles .buttom-circles-list { visibility: hidden }
+}
+@media(min-width: 768px) and (max-width: 991px) { 
+  #slideshow_strip > .fa { font-size: 50px }
+  #slideshow_strip .buttom-circles .buttom-circles-list { visibility: hidden }
+}
+@media(min-width: 992px) and (max-width: 1199px) { 
+  #slideshow_strip > .fa { font-size: 75px }
+  #slideshow_strip .buttom-circles .buttom-circles-list { font-size: 17px }
+}
+@media(min-width: 1200px) { 
+  #slideshow_strip > .fa { font-size: 100px }
+  #slideshow_strip .buttom-circles .buttom-circles-list { font-size: 25px }
+}
