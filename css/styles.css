@@ -75,7 +75,7 @@ body {
     border-width: 1px;
     color: gray;
     text-decoration-color: gray;
-    text-decoration: underlinesta
+    text-decoration: none;
 }
 
 #navbar #location_menu {
@@ -85,6 +85,7 @@ body {
     height: 73px;
     background-color:var(--site_pink);
 }
+
 
 #slideshow_strip {
     overflow: hidden;
