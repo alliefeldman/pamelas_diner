@@ -86,7 +86,6 @@ function resetNav() {
             <a href="order_online.html" id="order_online"><h2>ORDER ONLINE</h2></a>
         </nav>
     </div>`;
-    console.log("hjkl");
 }
 
 function showHideTextbox() {
@@ -125,7 +124,6 @@ function submitForm () {
     message = document.getElementById("send_message");
     if (message.checked) {
         text = document.getElementById("message_textbox");
-        console.log(text.value);
         window.location.href = `mailto:pam@pamelasdiner.com?subject=A Message&body=${text.value}`;
     }
 }
